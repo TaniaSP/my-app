@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import CounterComponent from './CounterComponent'
+import GenreComponent from './GenreComponent'
+import SearchComponent from './Component'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="main">
+      {React.createElement(
+        'div',
+        { className: 'createdElement' },
+        'Tania Homework 1: Components!'
+      )}
+      <CounterComponent />
+      <SearchComponent />
+      <GenreComponent />
+    </div>
   </React.StrictMode>
 );
 
